@@ -7,7 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-@SpringBootTest @AutoConfigureMockMvc
+@SpringBootTest(classes=ipic.app.IpicApiApplication.class) @AutoConfigureMockMvc
 class IpicControllerTests {
  @Autowired MockMvc mock;
  @Test void saludRespondeOk() throws Exception {
